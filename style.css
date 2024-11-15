@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(34, 33, 33);
+    color: white;
+}
+
+.left {
+    width: 30vw;
+    padding: 7px;
+}
+
+.right {
+    width: 70vw;
+    margin: 12px 0;
+    position: relative;
+}
+
+.home {
+    padding: 10px;
+}
+
+.home ul li {
+    width: 15px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-top: 11px;
+    font-weight: 400;
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    padding: 23px 14px;
+    font-weight: 400;
+    align-items: center;
+    font-size: 13px;
+}
+
+.heading img {
+    width: 30px;
+}
+
+.footer {
+    display: flex;
+    font-size: 10px;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    padding: 14px 0;
+}
+
+.library {
+    min-height: 74vh;
+    position: relative;
+}
+
+.footer a {
+    color: grey;
+
+}
+
+.header {
+    display: flex;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    justify-content: space-between;
+    background-color: #232121;
+    height: 77px;
+}
+
+.header>* {
+    padding: 20px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    gap:14px;
+}
+
+.spotify-playlists {
+    padding: 16px;
+}
+
+.cardContainer {
+    min-width: 670px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin: 20px;
+    overflow-y: auto;
+    max-height: 60vh;
+}
+
+.spotify-playlists .card {
+    width: 182px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+    height: 260px;
+}
+
+.card>* {
+    padding-top: 7px;
+}
+
+.card p {
+    font-size: small;
+}
+
+.spotify-playlists .card img {
+    width: 100%;
+    object-fit: contain;
+}
+.songsList li{
+    display: flex;
+    justify-content: space-between;
+}
+.songsList li> div{
+    display: flex;
+    gap:5px;
+}
+
+.play {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1fdf64;
+    position: absolute;
+    top: 200px;
+    right: 17px;
+    opacity: 0;
+    padding: 0;
+    transition: all 0.15s ease-out;
+}
+
+.card:hover {
+    .play {
+        opacity: 1;
+        top: 168px;
+        cursor:pointer;
+    }
+    background-color: #333232;
+}
+
+.card {
+    position: relative;
+    max-width:167px;
+}
+
+
+/*scrollbar css */
+::-webkit-scrollbar {
+    width: 12px;
+    background: #2c2c2c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a4a4a;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6a6a6a;
+}
+
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #4a4a4a #2c2c2c;
+}
+
+*::-webkit-scrollbar-track {
+    background: #2c2c2c;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #4a4a4a;
+    border-radius: 6px;
+}
+
+/**/
+.signupbtn {
+    background-color: transparent;
+    color: rgba(252, 247, 247, 0.548);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.buttons>* {
+    margin: 0 12px;
+    padding: 0;
+}
+
+.signupbtn:hover {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.loginbtn {
+    background-color: white;
+    border-radius: 21px;
+    font-weight: 550;
+    color: black;
+    padding: 10px;
+    width: 84px;
+    border: none;
+    outline: none;
+}
+
+.loginbtn:hover {
+    font-weight: bolder;
+    padding: 11px;
+}
+
+.playbar {
+    position:absolute;
+    bottom: 0;
+    background-color: #181e16;
+    width: 94%;
+    padding: 9px;
+    bottom: 10px;
+    border-radius: 13px;
+    min-height: 34px;
+}
+
+.songbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.songsList ul {
+    padding: 0 12px;
+    list-style-type: decimal;
+    overflow-y: scroll;
+    max-height: 56vh;
+
+}
+.hamburger{
+    display:none;
+}
+
+.songsList ul li {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+    /* border: 1px solid rgba(255, 255, 255, 0.226); */
+    border-radius: 5px;
+    margin: 12px 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+
+.songsList .info {
+    font-size: 13px;
+}
+
+.playnow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.playnow span {
+    font-size: 15px;
+    width: 64px;
+    padding: 1px;
+    font-size: 13px;
+}
+
+.seekbar {
+    height: 4px;
+    width: 98%;
+    background-color: rgba(240, 255, 255, 0.692);
+    bottom: 7px;
+    position: absolute;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.circle {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: azure;
+    position: relative;
+    bottom: 4px;
+    left: 0;
+    transition: left 0.5s;
+}
+.cross{
+    position:absolute;
+    right:31px;
+    top:25px;
+}
+
+.songbuttons {
+    position: fixed;
+    left: 62vw;
+}
+
+.songbuttons img {
+    cursor: pointer;
+}
+input{
+    width:70px;
+    height: 10px;
+    cursor:pointer;
+}
+.volume{
+    cursor:pointer;
+}
+.abv {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.849);
+    font-size: 14px;
+    align-items: center;
+}
+
+ @media (max-width:1000px) {
+    .left {
+        position: absolute;
+        left: -110%;
+        transition: all .3s;
+        width: 413px;
+        z-index:1;
+        background-color: black;
+    }
+
+    .right {
+        width: 100vw;
+    }
+    .hamburger{
+        display: block;
+    }
+    .cardContainer{
+        min-width:373px;
+        justify-content: center;
+    }
+    .spotify-playlists .card {
+        width: 361px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #252525;
+        height: 400px;
+    }    
+    .card {
+        position: relative;
+        max-width: 326px;
+        max-block-size: 400px;
+    }
+    .playbar{
+      position:relative;
+      width: auto;
+    }
+    .playbar .songinfo{
+        font-size: smaller;
+    }
+    .playbar .songtime{
+        font-size: smaller;
+    }
+    .songbuttons{
+        gap:5px;
+        left: 54vw;
+        position: static;
+    }
+    .seekbar{
+        width:89vw;
+    }
+    .items{
+    flex-direction: column;
+    }
+    .abv{
+        flex-direction: column;
+        gap:8px;
+    }
+
+} 
